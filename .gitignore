@@ -59,3 +59,17 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+./node_modules
+./android/local.properties
+/.history/
+./.vscode
+*.zip
+app/components/__MACOSX/onboarding/._.DS_Store
+
+*.lock
+*.bin
+*.probe
+*.properties
+./android/app/build/
+android/app/build/

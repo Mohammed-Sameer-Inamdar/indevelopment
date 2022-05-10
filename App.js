@@ -41,13 +41,6 @@ const App = () => {
         assetType: 'Photos',
       })
         .then(r => {
-          // console.log(r.edges)
-          // setState(r.edges);
-          // console.log(r.page_info.has_next_page)
-          // console.log(r.page_info.end_cursor);
-          // console.log('before')
-          // console.log(imageGaller);
-
           imageGaller = {
             hasMore: r.page_info.has_next_page,
             first: parseFloat(r.page_info.end_cursor),
@@ -67,7 +60,7 @@ const App = () => {
 
   async function hasAndroidPermission() {
     const permission = PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE;
-
+    let vvv = null;
     const hasPermission = await PermissionsAndroid.check(permission);
     if (hasPermission) {
       return true;
